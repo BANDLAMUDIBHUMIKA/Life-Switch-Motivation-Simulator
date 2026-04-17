@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LIFE SWITCH-MOTIVATION SIMULATOR</title>
+  <meta name="description" content="Life Switch is a motivational simulator where you explore life scenarios, make decisions and improve your mindset daily.">
+  <meta name="keywords" content="motivation, life simulator, discipline, self improvement, daily motivation">
+  <meta name="author" content="Bhumika Bandlamudi">
+  <link rel="icon" href="favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="main-wrapper">
+  <!-- HERO -->
+<section class="hero">
+  <div class="title-row">
+    <span class="logo">⚡</span>
+    <h1 class="main-title">LIFE SWITCH-MOTIVATION SIMULATOR</h1>
+  </div>
+  <h2 class="tagline">
+    Your personal motivation engine for turning failure moments into new direction.
+  </h2>
+  <p class="hero-text">
+    Life is not random.Every choice you make today is shaping the version of you tomorrow.This simulator helps you see your path clearly,make better decisions and build the life you actually want.
+    Your life is a system and every action is a variable.Change the input and you change the outcome.
+    Start experimenting with your decisions and unlock a better version of your future.
+  </p>
+</section>
+<button onclick="toggleDarkMode()">🌙</button>
+<select onchange="changeTheme(this.value)">
+  <option value="default">Default</option>
+  <option value="sunset">Sunset</option>
+  <option value="ocean">Ocean</option>
+</select>
+<!-- 1. ABOUT -->
+<section class="about" id="aboutSection">
+  <h2>About This Platform</h2>
+  <p>Rebuild Yourself,Life Switch transforms failure into clarity and discipline.</p>
+  <h2>About Creator</h2>
+  <h3>Bhumika Bandlamudi</h3>
+  <p>Contact: bandlamudibhumika@gmail.com</p>
+  <p>
+    I'm building this platform for people who want to grow but struggle with consistency.
+    No fancy talks—just real motivation,practical mindset shifts and daily reminders to keep you moving forward.
+    I create this space to remind people that consistency is stronger than talent.Small daily actions can completely change your life if you don't quit.
+    My goal is to help you stay focused,disciplined and mentally strong.I believe everyone has untapped potential but most people give up too early.
+    This platform is built to push you when you feel low,to remind you why you started and to help you become the best version of yourself one step at a time.
+    Helping you stay consistent,focused and mentally strong—one day at a time.
+  </p>
+</section>
+<!-- 2. SCENARIOS -->
+<section class="container" id="scenarioSection">
+<select id="lang">
+  <option value="en">English</option>
+  <option value="hi">Hindi</option>
+</select>
+<input type="text" id="search" placeholder="Search your situation...">
+<button onclick="scrollToScenarios()">Explore Scenarios ↓</button>
+<div class="layout">
+  <div id="indexList" class="index-list"></div>
+  <div id="scenarioBox" class="scenario-box">
+  <div class="scenario-content">
+    <h2 id="scenarioTitle"></h2>
+    <p id="scenarioText"></p>
+  </div>
+    <div class="buttons">
+    <button onclick="nextScenario()">Next</button>
+    <button onclick="saveFavorite()">❤️</button>
+    <div class="voice-box">
+      <button onclick="toggleVoiceMenu()">🎧</button>
+      <div id="voiceMenu" class="voice-menu">
+        <button onclick="playVoice()">Play</button>
+        <button onclick="pauseVoice()">Pause</button>
+        <button onclick="resumeVoice()">Resume</button>
+        <button onclick="stopVoice()">Stop</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- 3. WORK WITH US -->
+<section class="work">
+  <h2>Work With Us</h2>
+  <p>Let's build something impactful together.</p>
+  <div class="social-links">
+    <a href="https://instagram.com/bhumzzz_b">Instagram</a>
+    <a href="https://x.com/bhumibandlamudi">X (Twitter)</a>
+    <a href="https://www.linkedin.com/in/bhumika-bandlamudi">LinkedIn</a>
+  </div>
+</section>
+<script src="script.js">
+</script>
+</div>
+</body>
+</html>
